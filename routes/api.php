@@ -25,7 +25,7 @@ Route::get('index', [FlagController::class, 'index']);
 // Store Data
 Route::post('store', [FlagController::class, 'store']);
 // DIsplay want to update data
-Route::post('edit/{id}', [FlagController::class, 'edit']);
+Route::get('edit/{id}', [FlagController::class, 'edit']);
 // Update Data
 Route::post('update/{id}', [FlagController::class, 'update']);
 // Destroy Data
