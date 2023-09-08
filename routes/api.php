@@ -21,13 +21,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 // Display ALl Data
-Route::get('api/index', [FlagController::class, 'index']);
+Route::get('index', [FlagController::class, 'index']);
 // Store Data
-Route::post('api/store', [FlagController::class, 'store']);
+Route::post('store', [FlagController::class, 'store']);
 // DIsplay want to update data
-Route::post('api/edit/{id}', [FlagController::class, 'edit']);
+Route::post('edit/{id}', [FlagController::class, 'edit']);
 // Update Data
-Route::post('api/update/{id}', [FlagController::class, 'update']);
+Route::post('update/{id}', [FlagController::class, 'update']);
 // Destroy Data
-Route::post('api/destroy/{id}', [FlagController::class, 'destroy']);
+Route::post('destroy/{id}', [FlagController::class, 'destroy']);
 
